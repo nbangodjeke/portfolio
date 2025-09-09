@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacter Thiery ODJEKE</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1><a href="index.html">ODJEKE <span>N'bango Thiery</span></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+      <h2>Vous avez un projet en tête ? <br>N'hésitez pas à me contacter</h2>
+      <form id="contactForm">
+        <label for="prenom">Votre prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="John" oninput="validerPrenom()">
+        <div id="erreurPrenom" class="message-erreur"></div>
+
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Grandson" oninput="validerNom()">
+        <div id="erreurNom" class="message-erreur"></div>
+
+        <label for="sujet">Votre sujet</label>
+        <input type="text" id="sujet" name="sujet" placeholder="Développement d'un site vitrine" oninput="validerSujet()">
+        <div id="erreurSujet" class="message-erreur"></div>
+
+        <label for="message">Écrivez votre message ici</label>
+        <textarea id="message" name="message" rows="3" oninput="validerMessage()"></textarea>
+        <div id="erreurMessage" class="message-erreur"></div>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+  </section>   
+  <footer>
+    <div>Designed by <span>Thiery</span> with HTML CSS JS</div>
+    <div>Tous droits réservés - 2025</div>
+</footer>
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>
